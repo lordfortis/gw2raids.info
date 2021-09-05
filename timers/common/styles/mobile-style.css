@@ -1,0 +1,67 @@
+@media screen and (max-width: 970px) {
+    .splash-box {
+        width: 90%;
+        margin: 0px auto 0px auto;
+    }
+    .splash-box div {
+        max-width: 95%;
+    }
+    .close-splash {
+        font-size: 2em;
+    }
+    .timer-display {
+        width: 90%;
+    }
+    .main-settings, .volume-controls, .page-footer {
+        flex-direction: column;
+    }
+    .main-settings, .timer-display {
+        background: initial;
+    }
+    .volume-controls {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .timer-display {
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .timer-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .timer-buttons input[type=button] {
+        width: 90%;
+        margin: 10px auto 10px auto;
+    }
+    .timer-time {
+        font-size: 3.5em;
+    }
+    .timer-text {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 550px) {
+    .page-title {
+        font-size: 2em;
+    }
+    .menu-return {
+        float: none;
+        margin: 20px auto 10px auto;
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 390px) {
+    .cookie-control {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .cookie-control input[type=button] {
+        width: 100%;
+        margin: 10px auto 10px auto;
+    }
+}

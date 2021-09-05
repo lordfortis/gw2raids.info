@@ -1,0 +1,208 @@
+a, a:visited {
+    color: #000000;
+}
+.centered-text {
+    text-align: center;
+}
+.menu-return {
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.menu-return a, .menu-return a:visited {
+    text-decoration: none;
+}
+.page-title {
+    font-size: 2.5em;
+    font-family: 'Acme', sans-serif;
+}
+.splash-box {
+    font-size: 0.9em;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid #eaeaea;
+    border-radius: 5px;
+    padding: 4px;
+    width: 760px;
+    margin: 0px auto 0px auto;
+    background-color: #eaeaea;
+    text-align: center;
+}
+.close-splash {
+    cursor: pointer;
+    float: right;
+    font-family: 'Acme', sans-serif;
+}
+.page-content {
+    display: flex;
+    flex-direction: column;
+}
+.timer-buttons {
+    margin: 40px 0px 0px 0px;
+    text-align: center;
+}
+.timer-buttons input[type=button] {
+    height: 80px;
+    width: 260px;
+    cursor: pointer;
+    margin: 0px 10px 0px 10px;
+    font-size: 2.5em;
+    font-family: 'Acme', sans-serif;
+}
+.timer-display {
+    height: 400px;
+    width: 900px;
+    margin: 20px auto 0px auto;
+    border: 2px solid #eaeaea;
+    font-family: 'Open Sans', sans-serif;
+}
+.top-background {
+    background: url("../img/background-top.png") #ffffff;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+.timer-display hr {
+    width: 60%;
+    border: 1px solid #000000;
+    margin: 20px auto 80px auto;
+}
+.timer-time {
+    text-align: center;
+    font-size: 5em;
+}
+.timer-text {
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+.volume-controls {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    width: 800px;
+    margin: 20px auto 0px auto;
+}
+.volume-control-box {
+    flex-grow: 1;
+}
+.small-centered-box {
+    text-align: center;
+    margin: 0px auto 0px auto;
+    width: 300px;
+}
+.volume-status {
+    height: 40px;
+}
+.main-settings, .cookie-control {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px auto 0px auto;
+    padding: 10px;
+}
+.main-settings {
+    display: flex;
+    border: 2px solid #eaeaea;
+}
+.bottom-background {
+    background: url("../img/background-bottom.png") #ffffff;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.main-settings input {
+    font-family: 'Open Sans', sans-serif;
+    margin: 4px 0px 4px 10px;
+}
+.main-settings label {
+    font-size: 0.9em;
+    font-weight: 900;
+}
+.main-settings hr {
+    width: 60%;
+    border: 1px solid #000000;
+    margin: 10px auto 10px auto;
+}
+.main-settings-child {
+    flex-grow: 1;
+}
+.settings-content {
+    display: flex;
+    flex-direction: column;
+}
+.settings-row {
+    display: flex;
+}
+.settings-title {
+    margin: 0px 0px 8px 0px;
+    text-decoration: underline;
+    width: 300px;
+    font-weight: 900;
+}
+.sound-choice {
+    margin: 4px 0px 4px 10px;
+    font-family: 'Open Sans', sans-serif;
+    height: 26px;
+    width: 180px;
+}
+.settings-long-left {
+    width: 120px;
+    text-align: right;
+    padding: 1px 10px 0px 0px;
+}
+.settings-left {
+    width: 80px;
+    text-align: right;
+    padding: 1px 10px 0px 0px;
+}
+.settings-right {
+    width: 200px;
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+}
+.cookie-control input[type=button] {
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+    margin: 0px 15px 0px 15px;
+    font-size: 1.5em;
+    font-family: 'Acme', sans-serif;
+}
+.cookie-response {
+    margin: 10px 0px 0px 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+.page-footer {
+    border-top: 2px solid #eaeaea;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.footer-section {
+    padding: 8px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.copyright-license {
+    font-size: 0.8em;
+}
+.voice-license {
+    width: 300px;
+    line-height: normal;
+    vertical-align: top;
+    text-align: left;
+    margin: 0px auto 0px auto;
+}
+.normal-footer {
+    line-height: normal;
+}
+.voice-license img {
+    float: left;
+    margin: 3px 4px 0px 0px;
+}
+.extra-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
