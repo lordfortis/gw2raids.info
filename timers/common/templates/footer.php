@@ -21,7 +21,8 @@
                 Original Work Copyright &copy; 2021 - Lord Fortis.1452<br />
                 This program comes with ABSOLUTELY NO WARRANTY.<br />
                 This is free software under GNU GPL and you are welcome to redistribute it under certain conditions.<br />
-                For more details, see <a href="https://www.gnu.org/licenses/" target="_blank">https://www.gnu.org/licenses/</a>.
+                For more details, see <a href="https://www.gnu.org/licenses/" target="_blank">https://www.gnu.org/licenses/</a>.<br />
+                See the source code at <a href="https://github.com/lordfortis/gw2raids.info" target="_blank">https://github.com/lordfortis/gw2raids.info</a>
             </div>
         </div>
         <div id="extra_footer" class="normal-footer footer-section extra-footer">
