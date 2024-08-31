@@ -6,7 +6,6 @@ const ON_LOAD = () => {
 }
 
 const START_COUNTDOWN = () => {
-    document.getElementById("timer_offset").textContent = 0;
     if (document.getElementById("use_countdown").checked) {
         document.getElementById("text").innerText = "6";
         TIMER = setTimeout(function() { COUNTDOWN(5); },1000);
@@ -18,6 +17,7 @@ const START_COUNTDOWN = () => {
 
 const COUNTDOWN = (counter) => {
     if (counter === 0) {
+        document.getElementById("timer_offset").textContent = 0;
         if (document.getElementById("volume_alert").value > 0) {
             document.getElementById("alert_sound").play();
         }
@@ -104,7 +104,15 @@ const UPDATE_VOL_VOICE = () => {
 const TEST_VOL_VOICE = () => {
     voice = document.getElementById('voice_sound_choice').value
     volume = document.getElementById('volume_voice').value/10
-    responsiveVoice.speak('Testing volume',voice,{'volume': volume});
+    try {
+        responsiveVoice.speak('Testing volume',voice,{'volume': volume});
+    }
+    catch {
+        if (volume > 0) {
+            document.getElementById("splash").innerHTML = "<div>Text to speech is not functioning correctly, it may be blocked by your pop-up blocker.<div id='close_splash' class='close-splash' onclick='TOGGLE_VISIBILITY(\"splash\",\"hidden\")'>X&nbsp;</div></div><div>Turn the voice volume to 0 to stop this message re-appearing.</div>";
+            TOGGLE_DISPLAY("splash","initial");
+        }
+    }
 }
 
 /* Hides all the distracting elements around the timer */
