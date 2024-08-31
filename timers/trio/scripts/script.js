@@ -37,7 +37,12 @@ const START_TIMER = () => {
 const INTERVAL_CHECK = async (delay,totaltime,times,settings,timeout,finishtime) => {
     let starttime = Date.now();
     let overflow = (starttime-finishtime)-delay;
-    totaltime+=(delay+overflow);
+    let offset = parseInt(document.getElementById("timer_offset").textContent);
+
+    totaltime+=(delay+overflow)+offset;
+    if (offset !== 0) {
+        document.getElementById("timer_offset").textContent = 0;
+    }
     if (overflow < 0) {
         overflow = 0;
     }

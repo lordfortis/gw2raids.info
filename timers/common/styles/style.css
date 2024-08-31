@@ -93,6 +93,17 @@ a, a:visited {
 .volume-status {
     height: 40px;
 }
+.control-small-button {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin: 10px 5px 0px 5px;
+    font-size: 1em;
+    font-family: 'Acme', sans-serif;
+}
+.control-offset {
+    display: none;
+}
 .main-settings, .cookie-control {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -108,7 +119,7 @@ a, a:visited {
     background-position: center top;
     background-repeat: no-repeat;
 }
-.main-settings input {
+.main-settings input[type=checkbox], .main-settings input[type=text] {
     font-family: 'Open Sans', sans-serif;
     margin: 4px 0px 4px 10px;
 }
@@ -157,6 +168,14 @@ a, a:visited {
     width: 200px;
     text-align: left;
     padding: 0px 0px 0px 10px;
+}
+.settings-small-button {
+    height: 20px;
+    width: 100px;
+    cursor: pointer;
+    margin: 10px 5px 0px 5px;
+    font-size: 0.8em;
+    font-family: 'Acme', sans-serif;
 }
 .cookie-control input[type=button] {
     height: 40px;

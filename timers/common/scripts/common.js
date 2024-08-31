@@ -6,6 +6,7 @@ const ON_LOAD = () => {
 }
 
 const START_COUNTDOWN = () => {
+    document.getElementById("timer_offset").textContent = 0;
     if (document.getElementById("use_countdown").checked) {
         document.getElementById("text").innerText = "6";
         TIMER = setTimeout(function() { COUNTDOWN(5); },1000);
@@ -57,6 +58,12 @@ const STOP_TIMER = (fulltime) => {
     }
 }
 
+/* Set the timer offset for adjusting the timer during a fight */
+const ADJUST_OFFSET = (offset) => {
+    curroffset = parseInt(document.getElementById("timer_offset").textContent);
+    document.getElementById("timer_offset").textContent = curroffset + offset;
+}
+
 /* Change the alert volume */
 const UPDATE_VOL_ALERT = () => {
     let volume = document.getElementById('volume_alert').value;
@@ -76,6 +83,11 @@ const UPDATE_ALERT_SOUND = () => {
     document.getElementById("alert_sound").load();
     document.getElementById("alert_sound").play();
 }
+/* Test the volume of the alert */
+const TEST_VOL_ALERT = () => {
+    document.getElementById("alert_sound").load();
+    document.getElementById("alert_sound").play();
+}
 
 /* Change the voice volume */
 const UPDATE_VOL_VOICE = () => {
@@ -86,6 +98,13 @@ const UPDATE_VOL_VOICE = () => {
     else {
         document.getElementById("voice_status").innerText = "";
     }
+}
+
+/* Test the volume of the voice */
+const TEST_VOL_VOICE = () => {
+    voice = document.getElementById('voice_sound_choice').value
+    volume = document.getElementById('volume_voice').value/10
+    responsiveVoice.speak('Testing volume',voice,{'volume': volume});
 }
 
 /* Hides all the distracting elements around the timer */

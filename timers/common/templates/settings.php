@@ -15,6 +15,14 @@
             <option value="UK English Female" selected>UK English Female</option>
             <option value="UK English Male">UK English Male</option>
         </select>
+        <div class="settings-row extra-footer">
+            <div>
+                <input type="button" class="settings-small-button" id="test_alert" value="Test Alert" title="Test the alert sound and volume" onclick="TEST_VOL_ALERT()">
+            </div>
+            <div>
+                <input type="button" class="settings-small-button" id="test_voice" value="Test Voice" title="Test the voice and volume" onclick="TEST_VOL_VOICE()">
+            </div>
+        </div>
         <hr>
         <div class="settings-row">
             <div class="settings-left">
